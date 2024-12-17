@@ -9,6 +9,13 @@ import Header from './components/header';
 import { ToastContainer } from 'react-toastify';
 import Footer from './components/footer/footer';
 import 'react-toastify/ReactToastify.css';
+import LevelPage from './pages/levelPage';
+import QuizPage from './pages/QuizPage';
+import ResponsesPage from './pages/ResponsesPage';
+import AdminPage from './pages/AdminLogin';
+import UnstopContestPage from './pages/waste/Page';
+import Timeline from './pages/waste/unstop';
+import Leaderboard from './pages/LeaderBoard';
 
 function App() {
   return (
@@ -21,7 +28,14 @@ function App() {
           <Route path='/overview' element={<Overview />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/admin' element={<AdminPage />} />
+          <Route path='/ad' element={<UnstopContestPage />} />
           <Route path='/dashboard' element={<DashboardPage />} />
+          <Route path='/level' element={<LevelPage />} />
+          <Route path='/quiz/:id' element={<QuizPage />} />
+          <Route path='/timeline' element={<Timeline />} />
+          <Route path='/responses' element={<ResponsesPage />} />
+          <Route path='/leaderboard' element={<Leaderboard />} />
         </Routes>
         <Footer />
         <ToastContainer />

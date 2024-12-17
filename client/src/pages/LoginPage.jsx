@@ -148,7 +148,7 @@ const LoginPage = () => {
 
     try {
       const response = await axios.post(
-        'https://biochase-quiz-backend.vercel.app/api/v1/login',
+        'https://biochase-backend-xeqq.vercel.app/api/v1/login',
         {
           userName,
 
